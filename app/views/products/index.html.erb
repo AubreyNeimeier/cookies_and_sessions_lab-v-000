@@ -8,10 +8,10 @@
 
 
 <!-- display cart items if any exist.  -->
-<% if session[:cart] %>
-  <ul>
-  <% cart.uniq.each do |item| %>
-    <li><%= item %></li>
-  <%end%>
-  </ul>
+
+<ul>
+<% cart.uniq.each do |item| %>
+  <li><%= item %></li>
 <%end%>
+</ul>
+
