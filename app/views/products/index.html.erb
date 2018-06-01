@@ -13,9 +13,9 @@
 
 <!-- display cart items if any exist.  -->
 <% if cart %>
-  <% cart.uniq.each do |item| %>
   <ul>
+  <% cart.uniq.each do |item| %>
     <li><%= item %></li>
-  </ul>
   <%end%>
+    </ul>
 <%end%>
